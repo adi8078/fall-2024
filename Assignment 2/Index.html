@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eva's Pizza</title>
+    <link rel="icon" href="Images/pizza.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+    <header>
+        <h1>Welcome to Eva's Pizza Shop</h1>
+    </header>
+        <h2>Order Now!!</h2>
+        <form>
+            <!-- No of pizza -->
+            <label for="numPizzas">No of pizzas?</label>
+            <input type="number" id="numPizzas" name="numPizzas" min="1" max="10" required><br>
+
+             <!-- Pizza Toppings -->
+             <label for="toppings">Choose your toppings:</label><br>
+             <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni">
+             <label for="pepperoni">Pepperoni</label><br>
+             <input type="checkbox" id="mushrooms" name="toppings" value="mushrooms">
+             <label for="mushrooms">Mushrooms</label><br>
+             <input type="checkbox" id="olives" name="toppings" value="olives">
+             <label for="olives">Olives</label><br>
+
+              <!-- Pizza Size -->
+              <label for="pizzaSize">What size is the pizza?</label>
+              <select id="pizzaSize" name="pizzaSize">
+                  <option value="small">Small</option>
+                  <option value="medium">Medium</option>
+                  <option value="large">Large</option>
+                  <option value="large">Extra Large</option>
+              </select><br>
+
+              <!-- Customer Information -->
+              <label for="customerName">Name:</label>
+              <input type="text" id="customerName"  required><br>
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" required><br>
+
+              <!-- Special Instructions -->
+              <label for="instructions">Special instructions:</label><br>
+              <textarea id="instructions"></textarea><br>
+
+              <!-- Submit Button -->
+              <button type="submit">Place Order</button>
+          </form>
+        </form>
+        <section id="orderConfirmation">
+            <h2>Order Confirmation</h2>
+            <div id="orderDetails">
+                <!-- Order details will be displayed here -->
+            </div>
+        </section>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Access the form element
+                const form = document.querySelector('form');
+        
+                // Add event listener for form submission
+                form.addEventListener('submit', function(event) {
+                    event.preventDefault(); // Prevent form submission
+        
+                    
+                    const numPizzas = document.getElementById('numPizzas').value;
+                    const toppings = getCheckedValues(document.getElementsByName('toppings'));
+                    const pizzaSize = document.getElementById('pizzaSize').value;
+                    const customerName = document.getElementById('customerName').value;
+                    const email = document.getElementById('email').value;
+                    const instructions = document.getElementById('instructions').value;
+        
+                    // Display order details
+                    const orderDetails = `
+                        <p><strong>Number of Pizzas:</strong> ${numPizzas}</p>
+                        <p><strong>Toppings:</strong> ${toppings.join(', ')}</p>
+                        <p><strong>Pizza Size:</strong> ${pizzaSize}</p>
+                        <p><strong>Name:</strong> ${customerName}</p>
+                        <p><strong>Email:</strong> ${email}</p>
+                        <p><strong>Special Instructions:</strong> ${instructions}</p>
+                    `;
+        
+                    // Update the order details section
+                    const orderDetailsContainer = document.getElementById('orderDetails');
+                    orderDetailsContainer.innerHTML = orderDetails;
+                });
+        
+            
+                function getCheckedValues(checkboxes) {
+                    const checkedValues = [];
+                    checkboxes.forEach(function(checkbox) {
+                        if (checkbox.checked) {
+                            checkedValues.push(checkbox.value);
+                        }
+                    });
+                    return checkedValues;
+                }
+            });
+        </script>
+                
+    </div>
+</body>
+</html>

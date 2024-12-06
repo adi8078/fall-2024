@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta tags for character encoding, viewport settings, and page description -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Retro Product Store - Home Page">
+        <title>Sony Trinitron TV (1968) | Retro</title>
+        <!-- Link to the external CSS stylesheet -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!-- Placeholder for the global header, to be loaded via JavaScript -->
+        <div id="header-placeholder"></div>
+
+        <!-- Main content area for the Sony Trinitron TV product page -->
+        <main class="product-single">
+            <!-- Section for the product image and details -->
+            <div class="item-single">
+                <img src="images/product1.jpg" alt="Sony Trinitron TV">
+                <div class="item-content">
+                    <h2>Sony Trinitron TV (1968)</h2>
+                    <p>4.1 &starf; 103 Ratings and 59 Reviews</p>
+                    <h2>$399.95</h2>
+                    <p>Variations:</p>
+
+                    <!-- Dropdown for selecting Sony Trinitron TV variations -->
+                    <select id="sony-trinitron" name="sony-trinitron">
+                        <option value="kv-1310">Sony Trinitron KV-1310 (1970s) - $300-$500 USD</option>
+                        <option value="kv-20xbr">Sony Trinitron KV-20XBR (1985) - $600-$800 USD</option>
+                        <option value="kv-27fs100">Sony Trinitron KV-27FS100 (1991) - $1,000-$1,200 USD</option>
+                    </select>
+
+                    <!-- Quantity selector with increase/decrease buttons -->
+                    <div class="quantity-selector">
+                        <label for="quantity">Quantity:</label>
+                        <button id="decrease" onclick="changeQuantity(-1)">-</button>
+                        <input
+                            type="number"
+                            id="quantity"
+                            value="1"
+                            min="1"
+                            readonly
+                        >
+                        <button id="increase" onclick="changeQuantity(1)">+</button>
+                    </div>
+
+                    <!-- Buttons for adding the product to cart and checking out -->
+                    <div>
+                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="checkout">Checkout</button>
+                    </div>
+
+                    <!-- Product description text -->
+                    <p>
+                        The Sony Trinitron TV, first introduced in 1968, was a groundbreaking innovation in television technology,
+                        offering superior color reproduction and image quality thanks to its unique aperture grille design. It was renowned for its vibrant colors,
+                        sharp contrast, and reliability, making it a favorite for both home entertainment and professional use.
+                        Over the years, Trinitron TVs evolved with advanced features, including remote controls and larger screens, maintaining their reputation as high-quality display devices.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Section for additional product features and video -->
+            <div class="description">
+                <h3>Features</h3>
+                <hr>
+                <br>
+
+                <!-- List of product features -->
+                <ul>
+                    <li>
+                        <strong>Display Technology:</strong>
+                        Cathode Ray Tube (CRT) with Trinitron technology, which improves color accuracy and brightness.
+                    </li>
+                    <li>
+                        <strong>Screen Size:</strong>
+                        Varied models ranging from 14 inches to over 30 inches.
+                    </li>
+                    <li>
+                        <strong>Resolution:</strong>
+                        Standard-definition, typically 480p (not HD).
+                    </li>
+                    <li>
+                        <strong>Color System:</strong>
+                        Used Sony's unique aperture grille for enhanced color reproduction.
+                    </li>
+                    <li>
+                        <strong>Sound:</strong>
+                        Built-in speakers with mono or stereo sound depending on the model.
+                    </li>
+                    <li>
+                        <strong>Inputs:</strong>
+                        Typically includes RF, composite video, and audio inputs.
+                    </li>
+                    <li>
+                        <strong>Design:</strong>
+                        Characterized by its slim profile and unique grille design, which distinguishes it from other CRT TVs.
+                    </li>
+                    <li>
+                        <strong>Remote Control:</strong>
+                        Some models came with basic remote controls for changing channels and volume.
+                    </li>
+                </ul>
+                <br>
+
+                <!-- Embedded YouTube video -->
+                <iframe
+                    width="1200"
+                    height="600"
+                    src="https://www.youtube.com/embed/NESN1W8Q0aE?si=ilLFXqElGNaWjKTw"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                ></iframe>
+            </div>
+        </main>
+
+        <!-- Placeholder for the global footer, to be loaded via JavaScript -->
+        <div id="footer-placeholder"></div>
+
+        <!-- Link to the external JavaScript file -->
+        <script src="js/script.js"></script>
+    </body>
+</html>

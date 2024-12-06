@@ -1,0 +1,427 @@
+/* Importing Poppins font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+/* Styling for the header (header.html)*/
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 15px 10%;
+  background-color: rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+/* Styling for the logo in the header */
+.logo {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+/* Styling for navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 33px;
+}
+
+.nav-links li {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  transition: 0.3s ease all;
+}
+
+.nav-links a:hover {
+  color: #ff6e4e;
+}
+
+/* Styling for the 'Get Started' button */
+.get-started {
+  padding: 9px 25px;
+  outline: none;
+  border: 3px solid #ff6e4e;
+  color: white;
+  background-color: #ffffff00; /* Transparent background */
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.get-started:hover {
+  background-color: #ff6e4e22;
+}
+
+/* Styling for the welcome section (index.html)*/
+.welcome {
+  height: 72vh;
+  background: url("/images/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-message {
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.welcome-message h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.welcome-message p {
+  font-size: 1.2em;
+}
+
+/* Styling for the 'Shop Now' button */
+.shop-now {
+  margin-top: 33px;
+  cursor: pointer;
+  padding: 18px 30px;
+  background-color: #ff6e4e;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  transition: 0.3s ease all;
+}
+
+.shop-now a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.shop-now:hover {
+  background-color: #ff8c6f;
+}
+
+/* Styling for the 'Why Us' section */
+.why-us {
+  padding: 4rem 22rem;
+  background-color: #ff6e4e22;
+}
+
+.why-us ul {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+}
+
+.why-us ul li {
+  border-left: 1px solid #ff6e4e;
+  padding: 0px 20px;
+}
+
+.why-us li p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ff6e4e;
+}
+
+/* Styling for the 'Offer' section */
+.offer {
+  display: flex;
+  gap: 10rem;
+  align-items: center;
+  padding: 4rem 22rem;
+}
+
+.offer h3 {
+  font-size: 25px;
+  color: #ff6e4e;
+}
+
+.offer h1 {
+  font-size: 35px;
+}
+
+.offer img {
+  border-top-left-radius: 20rem;
+  border-top-right-radius: 20rem;
+}
+
+/* Styling for the footer (footer.html)*/
+footer {
+  background-color: #f7f7f7;
+  padding: 4rem 22rem;
+  color: black;
+}
+
+.footer-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  text-align: start;
+  color: #6b6262;
+}
+
+.footer-section h3 {
+  margin-bottom: 20px;
+  color: black;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #6b6262;
+}
+
+.footer-section a:hover {
+  color: #ff6e4e;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Styling for the 'About Us' section (about.html) */
+.about {
+  background-color: #ff6e4e22;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  padding: 4rem 22rem;
+  text-align: start;
+}
+
+/* Styling for the 'Contact Us' section (contact.html) */
+.contact {
+  background-color: #ff6e4e22;
+  height: auto;
+  padding: 10rem 22rem;
+}
+
+.contact .form {
+  display: flex;
+  gap: 100px;
+}
+
+/* Styling for the message form */
+.contact .form .message {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact .form input {
+  padding: 8px;
+  border: 1px solid #ff6e4e;
+  outline: none;
+  border-radius: 5px;
+}
+
+.contact .form textarea {
+  padding: 8px;
+  border: 1px solid #ff6e4e;
+  outline: none;
+  border-radius: 5px;
+}
+
+/* Styling for the send message button */
+.contact .form button {
+  padding: 8px 15px;
+  border: none;
+  background-color: #ff6e4e;
+  color: #fff;
+  font-weight: 400;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: max-content;
+}
+
+.contact .form button:hover {
+  background-color: #ff8c6f;
+}
+
+/* Styling for the newsletter section */
+.contact .form .newsletter {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Styling for buttons in the shop section (shop.html) */
+.shop button {
+  padding: 8px 15px;
+  border: none;
+  background-color: rgb(0, 0, 0, 0);
+  border: 2px solid #ff6e4e;
+  color: black;
+  font-weight: 400;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: max-content;
+}
+
+.shop button:hover {
+  background-color: #ff8c6f;
+}
+
+/* Styling for the shop section */
+.shop {
+  background-color: #ff6e4e22;
+  height: auto;
+  padding: 10rem 22rem;
+}
+
+.shop .items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 40px 10%;
+  padding: 10px;
+  gap: 50px;
+}
+
+.shop .items .item {
+  display: flex;
+  gap: 50px;
+}
+
+.shop .items .item img {
+  width: 260px;
+  height: 223px;
+}
+
+.item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.shop a {
+  text-decoration: none;
+  color: black;
+}
+
+.item-content ul {
+  font-size: small;
+  font-weight: 500;
+}
+
+/* Styling for the product single view (product_1.html, prodcut_2.html, product_3.html) */
+.product-single {
+  background-color: #ff6e4e22;
+  height: auto;
+  padding: 10rem 22rem;
+}
+
+.product-single .item-single {
+  display: flex;
+  gap: 100px;
+}
+
+.product-single .item-single img {
+  height: 250px;
+}
+
+/* Styling for quantity selector */
+select {
+  border-radius: 5px;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: white;
+  outline: none;
+  width: min-content;
+}
+
+option {
+  padding: 10px;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Styling for quantity selector buttons and input */
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity-selector input {
+  padding: 10px;
+  outline: 0;
+  background-color: white;
+  border: none;
+}
+
+.quantity-selector button {
+  background-color: white;
+  border: none;
+  padding: 10px 15px;
+  outline: none;
+}
+.add-to-cart {
+  padding: 9px 25px;
+  outline: none;
+  border: 2px solid #ff6e4e;
+  color: black;
+  background-color: #ffffff00; /* Transparent background */
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #ff6e4e;
+}
+
+.checkout {
+  margin-left: 10px;
+  padding: 9px 25px;
+  outline: none;
+  background-color:#ff6e4e;
+  color: black;
+  border: 2px solid #ff6e4d;
+  outline: none;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}

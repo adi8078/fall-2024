@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta tags for character encoding, viewport settings, and page description -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Retro Product Store - Home Page">
+        <title>Atari 2600 (1977)</title>
+        <!-- Link to the external CSS stylesheet -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!-- Placeholder for the global header, to be loaded via JavaScript -->
+        <div id="header-placeholder"></div>
+
+        <!-- Main content area for the Atari 2600 product page -->
+        <main class="product-single">
+            <!-- Section for the product image and details -->
+            <div class="item-single">
+                <img src="images/product2.jpeg" alt="Atari 2600">
+                <div class="item-content">
+                    <h2>Atari 2600 (1977)</h2>
+                    <p>4.8 &starf; 1512 Ratings and 902 Reviews</p>
+                    <h2>$49.95</h2>
+                    <p>Variations:</p>
+
+                    <!-- Dropdown for selecting Atari 2600 variations -->
+                    <select name="atari-2600-variations" id="atari-2600-variations">
+                        <option value="original-1977">Atari 2600 Original (1977)</option>
+                        <option value="vader-1982">Atari 2600 Vader (1982)</option>
+                        <option value="jr-1986">Atari 2600 Jr. (1986)</option>
+                    </select>
+
+                    <!-- Quantity selector with increase/decrease buttons -->
+                    <div class="quantity-selector">
+                        <label for="quantity">Quantity:</label>
+                        <button id="decrease" onclick="changeQuantity(-1)">-</button>
+                        <input
+                            type="number"
+                            id="quantity"
+                            value="1"
+                            min="1"
+                            readonly
+                        >
+                        <button id="increase" onclick="changeQuantity(1)">+</button>
+                    </div>
+
+                    <!-- Buttons for adding the product to cart and checking out -->
+                    <div>
+                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="checkout">Checkout</button>
+                    </div>
+
+                    <!-- Product description text -->
+                    <p>
+                        The Atari 2600, launched in 1977, revolutionized home gaming with its interchangeable cartridges and a vast library of titles. Known for its woodgrain design,
+                        the original model became iconic in the gaming world. It featured simple yet addictive games like Space Invaders and Pac-Man,
+                        bringing arcade experiences into living rooms. The Atari 2600 Vader (1982) introduced a sleek,
+                        all-black design, while the Atari 2600 Jr. (1986) offered a more compact and affordable version, making classic gaming accessible to a new generation.
+                        With its joystick controllers and groundbreaking technology, the Atari 2600 remains a symbol of the golden age of video games.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Section for additional product features and video -->
+            <div class="description">
+                <h3>Features</h3>
+                <hr>
+                <br>
+
+                <!-- List of product features -->
+                <ul>
+                    <li><strong>Processor:</strong> MOS 6507 CPU running at 1.19 MHz.</li>
+                    <li><strong>Memory:</strong> 128 bytes of RAM and 4 KB of ROM in the console.</li>
+                    <li><strong>Graphics:</strong> Custom TIA (Television Interface Adapter) chip, capable of displaying simple graphics with a resolution of 160 x 192 pixels.</li>
+                    <li><strong>Sound:</strong> TIA chip also handles audio, with 2-bit sound output.</li>
+                    <li><strong>Games:</strong> Cartridge-based system with interchangeable game cartridges.</li>
+                    <li><strong>Controllers:</strong> Joystick controllers with a single button and a rotary knob (later models included paddles and other peripherals).</li>
+                    <li><strong>Video Output:</strong> RF (radio frequency) output, which required an RF modulator to connect to the TV.</li>
+                    <li><strong>Power Supply:</strong> External power adapter providing 9V DC.</li>
+                    <li><strong>Dimensions:</strong> Approximately 15.5 inches x 10.5 inches x 3.5 inches (39.4 cm x 26.7 cm x 8.9 cm).</li>
+                    <li><strong>Weight:</strong> Around 3.5 pounds (1.6 kg).</li>
+                    <li><strong>Design:</strong> Distinctive wood-grain panel and black plastic casing.</li>
+                    <li><strong>Cartridges:</strong> Game cartridges varied in size and complexity; popular titles included Pong, Space Invaders, and Pac-Man.</li>
+                </ul>
+                <br>
+
+                <!-- Embedded YouTube video -->
+                <iframe
+                    width="1200"
+                    height="600"
+                    src="https://www.youtube.com/embed/DMerBUrZALc?si=yi5T3Cq0oxnmO5js"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                ></iframe>
+            </div>
+        </main>
+
+        <!-- Placeholder for the global footer, to be loaded via JavaScript -->
+        <div id="footer-placeholder"></div>
+
+        <!-- Link to the external JavaScript file -->
+        <script src="js/script.js"></script>
+    </body>
+</html>
